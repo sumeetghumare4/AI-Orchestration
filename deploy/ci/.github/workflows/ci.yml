@@ -33,3 +33,18 @@ jobs:
         node-version: 20
     - run: pnpm install
     - run: pnpm lint
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v4
+    - name: Vercel Install
+      uses: vercel/vercel-action@v1
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+    - name: Vercel Deploy
+      run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
