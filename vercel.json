@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
+    }
+  },
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "buildCommand": "pnpm --filter @ai-platform/frontend build",
+  "devCommand": "pnpm --filter @ai-platform/frontend dev",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "root": "apps/frontend"
+}
