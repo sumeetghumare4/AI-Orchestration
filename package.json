@@ -7,14 +7,11 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "pnpm install && pnpm -r build",
     "dev:backend": "pnpm --filter @ai-platform/backend dev",
     "dev:frontend": "pnpm --filter @ai-platform/frontend dev",
     "dev:cli": "pnpm --filter @ai-platform/cli dev",
-    "build": "pnpm -r build",
-    "build:backend": "pnpm --filter @ai-platform/backend build",
-    "build:frontend": "pnpm --filter @ai-platform/frontend build",
     "test": "jest --config jest.config.ts",
-    "test:training": "jest --config jest.config.ts --testPathPattern=training",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck"
   },
@@ -23,7 +20,6 @@
     "@types/node": "^22.10.0",
     "jest": "^30.5.2",
     "ts-jest": "^29.4.15",
-    "tsup": "^8.4.0",
     "typescript": "^5.9.3"
   },
   "engines": {
