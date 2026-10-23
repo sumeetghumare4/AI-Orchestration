@@ -1,13 +1,19 @@
 {
-  "build": {
-    "env": {
-      "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/frontend/package.json",
+      "use": "vite",
+      "config": {
+        "installCommand": "pnpm install --no-frozen-lockfile",
+        "buildCommand": "pnpm build"
+      }
     }
-  },
-  "installCommand": "pnpm install --no-frozen-lockfile",
-  "buildCommand": "pnpm --filter @ai-platform/frontend build",
-  "devCommand": "pnpm --filter @ai-platform/frontend dev",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "root": "apps/frontend"
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "apps/frontend/dist/$1"
+    }
+  ]
 }
