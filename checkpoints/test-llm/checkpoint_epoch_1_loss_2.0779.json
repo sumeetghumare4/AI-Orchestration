@@ -1,0 +1,12 @@
+{
+  "epoch": 0,
+  "loss": 2.0779357393151767,
+  "config": {
+    "name": "test-llm",
+    "type": "llm",
+    "parameters": {
+      "contextLength": 2048
+    }
+  },
+  "timestamp": "2026-10-23T05:53:23.721Z"
+}

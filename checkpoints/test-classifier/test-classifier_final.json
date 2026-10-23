@@ -1,0 +1,19 @@
+{
+  "config": {
+    "name": "test-classifier",
+    "type": "classification",
+    "parameters": {}
+  },
+  "timestamp": "2026-10-23T05:53:23.778Z",
+  "trainingConfig": {
+    "batchSize": 10,
+    "epochs": 2,
+    "learningRate": 0.001,
+    "validationSplit": 0.2,
+    "earlyStoppingPatience": 3
+  },
+  "metadata": {
+    "type": "classification",
+    "version": "1.0.0"
+  }
+}

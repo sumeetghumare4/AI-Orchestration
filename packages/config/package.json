@@ -1,0 +1,1 @@
+{"name":"@ai-platform/config","version":"0.1.0","description":"Shared config","main":"dist/index.js","scripts":{"build":"tsc"},"devDependencies":{"typescript":"^5.8.0"}}

@@ -1,0 +1,1 @@
+{"name":"@ai-platform/cli","version":"0.1.0","description":"CLI tool","bin":{"ai-platform":"src/cli.js"},"scripts":{"dev":"ts-node-dev src/index.ts","build":"tsc","start":"node dist/cli.js"},"dependencies":{"commander":"^12.0.0","@ai-platform/types":"*","@ai-platform/utils":"*","@ai-platform/config":"*"},"devDependencies":{"typescript":"^5.8.0","@types/node":"^22.10.0"}}

@@ -1,0 +1,19 @@
+{
+  "config": {
+    "name": "test-model",
+    "type": "classification",
+    "parameters": {}
+  },
+  "timestamp": "2026-10-23T05:53:23.688Z",
+  "trainingConfig": {
+    "batchSize": 32,
+    "epochs": 1,
+    "learningRate": 0.001,
+    "validationSplit": 0.2,
+    "earlyStoppingPatience": 3
+  },
+  "metadata": {
+    "type": "classification",
+    "version": "1.0.0"
+  }
+}

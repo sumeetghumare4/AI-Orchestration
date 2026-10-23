@@ -1,0 +1,21 @@
+{
+  "config": {
+    "name": "test-llm",
+    "type": "llm",
+    "parameters": {
+      "contextLength": 2048
+    }
+  },
+  "timestamp": "2026-10-23T05:53:23.739Z",
+  "trainingConfig": {
+    "batchSize": 4,
+    "epochs": 2,
+    "learningRate": 0.001,
+    "validationSplit": 0.2,
+    "earlyStoppingPatience": 3
+  },
+  "metadata": {
+    "type": "llm",
+    "version": "1.0.0"
+  }
+}

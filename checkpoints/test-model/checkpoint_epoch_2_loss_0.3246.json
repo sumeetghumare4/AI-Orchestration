@@ -1,0 +1,10 @@
+{
+  "epoch": 1,
+  "loss": 0.3245956455220672,
+  "config": {
+    "name": "test-model",
+    "type": "classification",
+    "parameters": {}
+  },
+  "timestamp": "2026-10-23T05:53:23.667Z"
+}

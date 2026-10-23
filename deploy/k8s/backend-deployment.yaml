@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-platform-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai-platform-backend
+  template:
+    metadata:
+      labels:
+        app: ai-platform-backend
+    spec:
+      containers:
+      - name: backend
+        image: ai-platform/backend:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: PORT
+          value: "3000"
+        - name: NODE_ENV
+          value: "production"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-platform-backend
+spec:
+  selector:
+    app: ai-platform-backend
+  ports:
+  - port: 3000
+    targetPort: 3000
+  type: ClusterIP

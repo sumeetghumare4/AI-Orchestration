@@ -1,0 +1,1 @@
+{"name":"@ai-platform/utils","version":"0.1.0","description":"Shared utils","main":"dist/index.js","scripts":{"build":"tsc"},"dependencies":{"@ai-platform/types":"*"},"devDependencies":{"typescript":"^5.8.0"}}
