@@ -5,8 +5,8 @@
       "src": "apps/frontend/package.json",
       "use": "vite",
       "config": {
-        "installCommand": "pnpm install --no-frozen-lockfile",
-        "buildCommand": "pnpm build"
+        "installCommand": "pnpm install --filter @ai-platform/frontend --ignore-workspace",
+        "buildCommand": "pnpm --filter @ai-platform/frontend build"
       }
     }
   ],
